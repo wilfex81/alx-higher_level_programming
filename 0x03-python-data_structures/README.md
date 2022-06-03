@@ -12,4 +12,4 @@
 11-delete_at.py	Function that deletes the item at a specific position in a list
 12-switch.py	Switches value of a and b
 13-is_palindrome.c	Checks if a singly linked list is a palindrome
-100-print_python_list_info.c	C function that prints some basic info about Pytho lists
+100-print_python_list_info.c	C function that prints some basic info about Python lists
