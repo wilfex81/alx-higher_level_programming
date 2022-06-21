@@ -3,20 +3,21 @@
 import math
 """Python class MagicClass that does exactly the same as the following Python bytecode"""
 
-class MagicClass:
 
-    """Class that stores the properties
-    of a circumference"""
+class MagicClass():
+    """Magic class."""
+
     def __init__(self, radius=0):
+        """Init class."""
         self.__radius = 0
-        if type(radius) is not int and type(radius) is not float:
+        if not isinstance(radius, int) and not isinstance(radius, float):
             raise TypeError('radius must be a number')
         self.__radius = radius
 
-    """ Method that calculates the area of the circumference """
     def area(self):
-        return ((self.__radius ** 2) * math.pi)
+        """Return area of class."""
+        return self.__radius ** 2 * math.pi
 
-    """ Method that calculates the perimeter of a circumference """
     def circumference(self):
-        return (2 * math.pi * self.__radius)
+        """Return circumference of class."""
+        return 2 * math.pi * self.__radius
