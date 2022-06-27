@@ -74,7 +74,7 @@ def solveNQueen(size):
 
     Queen(m_queen, 0)
 
-
+"""Main method"""
 if __name__ == '__main__':
 
     import sys
