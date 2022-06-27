@@ -74,11 +74,12 @@ def solveNQueen(size):
 
     Queen(m_queen, 0)
 
-"""Main method"""
+
 if __name__ == '__main__':
 
     import sys
 
+"""Main method"""
     if len(sys.argv) == 1 or len(sys.argv) > 2:
         print("Usage: nqueens N")
         sys.exit(1)
