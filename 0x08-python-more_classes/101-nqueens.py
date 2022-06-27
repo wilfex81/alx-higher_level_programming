@@ -4,7 +4,7 @@ This module contains an algorithm that resolves the N-Queen puzzle
 using backtracking
 """
 
-
+'''Function'''
 def isSafe(m_queen, nqueen):
     """ Method that determines if the queens can or can't kill each other
     Args:
@@ -25,7 +25,7 @@ def isSafe(m_queen, nqueen):
 
     return True
 
-
+'''Function'''
 def print_result(m_queen, nqueen):
     """ Method that prints the list with the Queens positions
     Args:
@@ -40,7 +40,7 @@ def print_result(m_queen, nqueen):
 
     print res
 
-
+'''Function'''
 def Queen(m_queen, nqueen):
     """ Recursive function that executes the Backtracking algorithm
     Args:
@@ -63,7 +63,7 @@ def Queen(m_queen, nqueen):
             if nqueen is not len(m_queen):
                 Queen(m_queen, nqueen + 1)
 
-
+'''Function'''
 def solveNQueen(size):
     """ Function that invokes the Backtracking algorithm
     Args:
