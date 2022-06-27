@@ -46,6 +46,7 @@ def print_result(m_queen, nqueen):
         res.append([i, m_queen[i]])
 
     print(res)
+print()
 
 
 def Queen(m_queen, nqueen):
@@ -89,7 +90,6 @@ def solveNQueen(size):
 if __name__ == '__main__':
     """system module"""
     import sys
-    """system module"""
 
     if len(sys.argv) == 1 or len(sys.argv) > 2:
         print("Usage: nqueens N")
