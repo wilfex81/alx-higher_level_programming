@@ -1,4 +1,6 @@
-#!/usr/bin/python3
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 """
 This module contains an algorithm that resolves the N-Queen puzzle
 using backtracking
@@ -38,7 +40,7 @@ def print_result(m_queen, nqueen):
     for i in range(nqueen):
         res.append([i, m_queen[i]])
 
-    print(res)
+    print res
 
 
 def Queen(m_queen, nqueen):
@@ -54,7 +56,7 @@ def Queen(m_queen, nqueen):
 
     m_queen[nqueen] = -1
 
-    while((m_queen[nqueen] < len(m_queen) - 1)):
+    while m_queen[nqueen] < len(m_queen) - 1:
 
         m_queen[nqueen] += 1
 
@@ -76,22 +78,21 @@ def solveNQueen(size):
 
 
 if __name__ == '__main__':
-    
-    """Main method"""
+
     import sys
-    
+
     if len(sys.argv) == 1 or len(sys.argv) > 2:
-        print("Usage: nqueens N")
+        print 'Usage: nqueens N'
         sys.exit(1)
 
     try:
         size = int(sys.argv[1])
     except:
-        print("N must be a number")
+        print 'N must be a number'
         sys.exit(1)
 
     if size < 4:
-        print("N must be at least 4")
+        print 'N must be at least 4'
         sys.exit(1)
 
     solveNQueen(size)
