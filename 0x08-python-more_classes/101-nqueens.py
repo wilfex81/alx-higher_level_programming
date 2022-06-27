@@ -1,11 +1,4 @@
 #!/usr/bin/python3
-"""
-
-This module contains an algorithm that resolves the N-Queen puzzle
-using backtracking
-
-"""
-
 
 def isSafe(m_queen, nqueen):
     """ Method that determines if the queens can or can't kill each other
@@ -46,8 +39,6 @@ def print_result(m_queen, nqueen):
         res.append([i, m_queen[i]])
 
     print(res)
-print()
-
 
 def Queen(m_queen, nqueen):
     """ Recursive function that executes the Backtracking algorithm
