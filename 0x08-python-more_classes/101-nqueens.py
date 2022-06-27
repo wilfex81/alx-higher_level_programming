@@ -1,4 +1,11 @@
 #!/usr/bin/python3
+"""
+
+This module contains an algorithm that resolves the N-Queen puzzle
+using backtracking
+
+"""
+import sys
 
 def isSafe(m_queen, nqueen):
     """ Method that determines if the queens can or can't kill each other
@@ -40,6 +47,7 @@ def print_result(m_queen, nqueen):
 
     print(res)
 
+
 def Queen(m_queen, nqueen):
     """ Recursive function that executes the Backtracking algorithm
 
@@ -79,8 +87,7 @@ def solveNQueen(size):
 
 
 if __name__ == '__main__':
-    """system module"""
-    import sys
+
 
     if len(sys.argv) == 1 or len(sys.argv) > 2:
         print("Usage: nqueens N")
