@@ -3,7 +3,7 @@
 
 
 def print_stats(size, status_codes):
-"""Write a script that reads stdin line by line and computes metrics"""
+    """Write a script that reads stdin line by line and computes metrics"""
     print("File size: {}".format(size))
     for key in sorted(status_codes):
         print("{}: {}".format(key, status_codes[key]))
