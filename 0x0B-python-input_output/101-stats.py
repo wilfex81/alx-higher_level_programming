@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 '''No comments here'''
 
-
+'''Intialize'''
 def print_stats(size, status_codes):
     """
     Print accumulated metrics
