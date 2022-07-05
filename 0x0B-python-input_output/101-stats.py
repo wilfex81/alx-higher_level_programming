@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""No imports"""
 
 def print_stats(size, status_codes):
     """Print accumulated metrics"""
@@ -9,6 +9,7 @@ def print_stats(size, status_codes):
 
 if __name__ == "__main__":
     import sys
+    '''System function'''
 
     size = 0
     status_codes = {}
