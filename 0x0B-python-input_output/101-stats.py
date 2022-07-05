@@ -5,6 +5,8 @@
 def print_stats(size, status_codes):
     """
     Print accumulated metrics
+    :param size
+    :param status_codes
     """
     print("File size: {}".format(size))
     for key in sorted(status_codes):
