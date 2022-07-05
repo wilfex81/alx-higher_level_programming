@@ -34,7 +34,7 @@ if __name__ == "__main__":
             try:
                 size += int(line[-1])
             except (IndexError, ValueError):
-                raise ValueError("value exceded")
+                pass
 
             try:
                 if line[-2] in valid_codes:
@@ -43,10 +43,10 @@ if __name__ == "__main__":
                     else:
                         status_codes[line[-2]] += 1
             except IndexError:
-                raise IndexError("value exceded")
+                pass
 
         print_stats(size, status_codes)
 
     except KeyboardInterrupt:
         print_stats(size, status_codes)
-        raise
+        pass
