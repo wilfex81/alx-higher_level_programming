@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+'''No comments here'''
 
 def print_stats(size, status_codes):
     """Print accumulated metrics"""
