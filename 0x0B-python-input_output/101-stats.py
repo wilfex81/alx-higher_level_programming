@@ -1,20 +1,19 @@
 #!/usr/bin/python3
+"""Module that reads from standard input and computes metrics"""
 
 
-"""Reads from standard input and computes metrics"""
+import sys
 
 
 def print_stats(size, status_codes):
     """Print accumulated metrics."""
     print("File size: {}".format(size))
+    
     for key in sorted(status_codes):
         print("{}: {}".format(key, status_codes[key]))
         
 
-
 if __name__ == "__main__":
-    import sys
-
     size = 0
     status_codes = {}
     valid_codes = ['200', '301', '400', '401', '403', '404', '405', '500']
