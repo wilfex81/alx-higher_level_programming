@@ -7,6 +7,7 @@ prints the following statistics:
 """
 
 
+
 def print_stats(size, status_codes):
     """Print accumulated metrics."""
     print("File size: {}".format(size))
