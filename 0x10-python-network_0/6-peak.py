@@ -31,4 +31,3 @@ def find_peak(list_of_integers):
 
     if list_of_integers[mid - 1] > list_of_integers[mid]:
         return(find_peak(list_of_integers[0:mid]))
-    
