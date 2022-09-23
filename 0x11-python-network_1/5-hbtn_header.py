@@ -1,15 +1,16 @@
 #!/usr/bin/python3
-"""
-Python script that sends a request to the URL and
-displays the value of a variable in the response header
-"""
+"""initializate"""
+from sys import argv
 import requests
-import sys
 
 
-if __name__ == "__main__":
-    try:
-        r = requests.get(sys.argv[1])
-        print(r.headers['X-Request-Id'])
-    except:
-        pass
+def header():
+    """
+    Script that fetches to url and get X-Request-Id.
+    """
+    req = requests.get(argv[1])
+    print(req.headers.get('X-Request-Id'))
+
+
+if __name__ == '__main__':
+    header()
